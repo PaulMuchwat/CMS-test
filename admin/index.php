@@ -24,7 +24,7 @@ if (isset($_SESSION['logged_in'])) {
                     <a href="add.php">Add Article</a>
                 </li>
                 <li>
-                    <a href="delet.php">Delete Article</a>
+                    <a href="delete.php">Delete Article</a>
                 </li>
                 <li>
                     <a href="logout.php">Logout</a>
