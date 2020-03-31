@@ -40,7 +40,7 @@ if (isset($_SESSION['logged_in'])) {
                 <small style="color:#aa0000;"><?php echo $error;?></small>
                 <br><br>
             <?php } ?>
-            <form action="" method="post" autocomlete="off">
+            <form action="add.php" method="post" autocomlete="off">
                 <input type="text" name="title" placeholder="Title">
                 <br><br>
                 <textarea name="content" id="" cols="50" rows="12" placeholder="Content"></textarea>
