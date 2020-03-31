@@ -6,6 +6,35 @@ include_once('../includes/connection.php');
     #checks if user is loged in
 if (isset($_SESSION['logged_in'])) {
     # display index
+    ?>
+
+<html>
+	<head>
+		<title>CMS Tutorial</title>
+		<link rel="stylesheet" href="../assets/style.css" /> 
+	</head>
+	<body>
+		<div class="container">
+            <a href="index.php" id="logo">CMS</a>
+
+            <br>
+
+            <ol>
+                <li>
+                    <a href="add.php">Add Article</a>
+                </li>
+                <li>
+                    <a href="delet.php">Delete Article</a>
+                </li>
+                <li>
+                    <a href="logout.php">Logout</a>
+                </li>
+            </ol>
+		</div>
+	</body>
+</html>
+
+    <?php
 }else {
     if (isset($_POST['username'], $_POST['password'])) {
         $username = $_POST['username'];
