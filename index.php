@@ -3,7 +3,6 @@ include_once('includes/connection.php');
 include_once('includes/article.php');
 $article = new Article;
 $articles = $article->fetch_all();
-echo md5('password');
 ?>
 <html>
 	<head>
@@ -25,6 +24,9 @@ echo md5('password');
 			</li>
 		<?php } ?>
 		</ol>
+
+			<br>
+			<small><a href="admin">admin</a></small>
 		</div>
 	</body>
 </html>
